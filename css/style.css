@@ -34,6 +34,8 @@ body
 	width: 100vw;
 	height: max-content;
 	display: flex;
+	justify-content: center;
+	align-items: center;
 }
 /* direction-row , container div */
 .con-r{
@@ -77,3 +79,28 @@ body
 	border-radius:1vw;
 	color:var(--fa);
 }
+header{
+	width: 20vw;
+	background-color:var(--lg);
+	height: 8vh;
+	position: fixed;
+	top: 0;
+	display: flex;
+	justify-content:space-between;
+	
+}
+/* html header 양식 */
+
+/* html header 양식  */
+.profile-2{
+	width: 2vw;
+	height: 2vw;
+	border-radius: 2vw;
+	background-color: var(--g);
+}
+
+
+.width-1-vw {width:1vw;}
+.width-50-vw {width:50vw;}
+.height-50-vh {height:50vh;}
+.border-radius-50-per {border-radius: 50%;}
