@@ -142,17 +142,23 @@ header{
 	width:20vw;
 	height:max-content;
 	background-color: var(--fa);
+	text-align: center;
+	margin-top: 2vh;
 }
 .space{
 	width: 20vw;
 	height: 8vh;
-	background-color: red;
 }
 .b-img{
 width: 20vw;
 height: 30vh;
 background-color: var(--dig);
 }
+.m-img{
+	width: 20vw;
+	height: 20vh;
+	background-color: var(--dig);
+	}
 .s-img{
 	width: 5vw;
 	height: 5vw;
@@ -165,8 +171,8 @@ background-color: var(--dig);
 	border-radius:20%;
 }
 .s-img-layout{
-	width: max-content;
-	height: max-content;
+	width: 8vw;
+	height: 8vw;
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
@@ -191,11 +197,6 @@ z-index:0;
 	margin-bottom: 2vh;
 	margin-top: 2vh;
 }
-.s-img-layout{
-	overflow: hidden;
-	width: 20vw;
-	display: flex;
-}
 footer{
 	width:20vw;
 	height:7vh;
@@ -211,4 +212,71 @@ footer{
 	height: 2vw;
 	background-color:var(--g);
 	border-radius:30%;
+}
+.wrap{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+.text{
+	text-align: left;
+	line-height: 3vh;
+	margin-bottom: 2vh;
+	margin-top: 1vh;
+}
+.recipe{
+	margin-top: 2vh;
+}
+.recipe-img{
+	width: 10vw;
+	height: 10vw;
+	border-radius: 10%;
+	background-color: var(--g);
+	margin-right: 1vw;
+}
+.flex-r{
+	display: flex;
+	justify-content:space-between;
+}
+.flex-c{
+	display: flex;
+	flex-direction: column;
+}
+.m-t{
+	width: 20vw;
+	display: flex;
+	justify-content:center;
+	margin-top: 3vh;
+}
+.m-b{
+	width: 20vw;
+	display: flex;
+	justify-content:center;
+	margin-bottom: 3vh;
+}
+.nametag-full{
+	width: 20vw;
+	height: 5vh;
+background-color:var(--lg);
+display: flex;
+justify-content: center;
+align-items: center;
+border-radius: 1vw;
+position: relative;
+top: 1vh;
+left:0.5vw;
+z-index:0;
+}
+.timer{
+	width: 15vw;
+	height: 15vw;
+	background-color:var(--fa);
+	position:fixed;
+	top: 30vh;
+	left: 42.5vw;
+	border-radius:100%;
+	color: var(--08);
+	display: flex;
+	align-items:center;
+	justify-content: center;
 }
