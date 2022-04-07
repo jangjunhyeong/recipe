@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="./css/style.css">
+	<style>
+		*{
+			padding: 0;
+			margin: 0;
+		}
+		#root{
+			width: 100vw;
+			height: 100vh;
+			display: flex;
+			justify-content: center;
+			font-family: 'Noto Sans KR', sans-serif;
+			align-items: center;
+		}
+		:root{
+			--g:gray;
+			--dg:darkgray;
+			--lg:lightgray;
+		}
+		/* root의 div 쓰면 구분이 힘들어서 container라는 class를 넣었다. class가 너무 많으면 그것도 나름대로 힘들겠지만 (네이밍이나 요소관리에 있어서)
+			큰 div을 구분할 때는 좋아보인다. */
+		.container{
+			width: 20vw;
+			height: max-content;
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			background-color: var(--g);
+			overflow: hidden;
+		}
+		.container>div:nth-child(1){
+		width: inherit;
+		height: 10vh;
+		background-color:var(--dg);
+		display: flex;
+		justify-content:center;
+		align-items: flex-end;
+		}
+		.container>div:nth-child(2){
+		width: 80%;
+		height:3vh;
+		background-color:var(--lg);
+		display: flex;
+		justify-content:center;
+		align-items: center;
+		margin-top: 3vh;
+		background-color: var(--lg);
+		}
+		.container>div:nth-child(2)>div:nth-child(2){
+			width: 1vw;
+			height: 1vw;
+			background-color: var(--g);
+			border-radius: 2vw;
+			position: relative;
+			left: 4vw;
+		}
+
+		.container>div:nth-child(3){
+		width: inherit;
+		height: 70vh;
+		display: flex;
+		justify-content: center;
+		}
+		.container>div:nth-child(3)>ul{
+			list-style: none;
+			display: flex;
+			flex-wrap: wrap;
+			width: 85%;
+			height:40vh;
+			justify-content: space-around;
+			/* align-items: center; */
+			margin-top: 2vh;
+			/* flex-wrap으로 레이아웃을 구성했다 보니 
+			li 하나하나에 margin값을 주면 wrap 처리 한 div 레이아웃이
+			다 틀어진다.  3개씩 하나의 div으로 주면 해결이 가능하긴 한데 이게...*/
+			/* ul>li 에서 li의 높이 값을 늘려주어 해결하였다.
+			ul 속성이 height:max-content를 주었기 때문에 ul태그 속성의 %가
+			먹히지 않았던 것이었다. ^^ → 아무튼 해결 */
+
+			/* flex-wrap 을 하고 세로로 레이아웃이 되어 있는 상태에서
+			행간을 주기 위해서 ul의 높이를 조정해보고, 여러 시도를 해보았다. */
+		}
+		.container>div:nth-child(3)>ul>li{
+			height:15vh;
+			width: 33%;
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			justify-content: center;
+			font-weight: 500;
+			background-color:var(--lg);
+			margin-top: 3vh;
+		}
+		.container>div:nth-child(3)>ul>li>div{
+			width: 4vw;
+			height: 4vw;
+			border-radius: 4vw;
+			background-color:var(--dg);
+			margin-bottom: 1vh;
+		}
+		.b-box{
+			position:fixed;
+			top:85vh;
+		/* 항목들이 많아 스크롤을 해줘야 하니 완료 부분은 position fixed가 되어야한다. */
+		}
+	</style>
+</head>
+<body>
+	<div id="root">
+		<div class="container">
+			<!-- 알러지 분석 text -->
+			<div>
+				<h2>알러지 분석</h2>
+			</div>
+			<!-- 검색창 -->
+			<div>
+				<p>재료 직접 검색</p>
+				<div></div>
+			</div>
+			<!-- 요소 -->
+			<div>
+				<ul>
+					<li>
+						<div></div>
+						<p>고구마</p>
+					</li>
+					<li>
+						<div></div>
+						<p>감자</p>
+					</li>
+					<li>
+						<div></div>
+						<p>귤</p>
+					</li>
+					<li>
+						<div></div>
+						<p>복숭이</p>
+					</li>
+					<li>
+						<div></div>
+						<p>파인애플</p>
+					</li>
+					<li>
+						<div></div>
+						<p>딸기</p>
+					</li>
+					<li>
+						<div></div>
+						<p>바나나</p>
+					</li>
+					<li>
+						<div></div>
+						<p>가공육</p>
+					</li>
+					<li>
+						<div></div>
+						<p>쌀</p>
+					</li>
+				</ul>
+				<div class="b-box">
+					<p>완료</p>
+			</div>
+		</div>
+	</div>
+</body>
+</html>
