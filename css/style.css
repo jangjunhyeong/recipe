@@ -116,7 +116,14 @@ header{
 	align-items: center;
 	z-index: 1;
 }
-
+.profile-1{
+	width: 0.5vw;
+	height: 0.5vw;
+	border-radius:100%;
+	background-color: var(--g);
+	margin-right:1vw;
+	margin-left: 1vw;
+}
 .profile-2{
 	width: 2vw;
 	height: 2vw;
@@ -237,6 +244,7 @@ footer{
 .flex-r{
 	display: flex;
 	justify-content:space-between;
+	align-items: center;
 }
 .flex-c{
 	display: flex;
@@ -284,4 +292,25 @@ z-index:0;
 	position: fixed;
 	top:30vh;
 	left: 42.5vw;
+}
+.b-box-c{
+	width: 20vw;
+	height: 10vh;
+	background-color:var(--lg);
+}
+.center{
+	align-items: center;
+	justify-content: center;
+}
+.left-1{
+	position: relative;
+	left: 1vw;
+}
+.left-2{
+	position: relative;
+	left: 2vw;
+}
+.top-2{
+	position: relative;
+	margin-top:2vh;
 }
