@@ -54,7 +54,13 @@ body
 	flex-direction: row;
 	background-color: var(--fa);
 }
-
+.con-r-3{
+	width:20vw;
+	height:max-content;
+	display: flex;
+	flex-direction: row;
+	background-color: var(--fa);
+}
 /* direction-column , container div */
 
 .con-c{
@@ -69,6 +75,13 @@ body
 .con-c-2{
 	width: 20vw;
 	height: 100vh;
+	display: flex;
+	flex-direction: column;
+	background-color: var(--fa);
+}
+.con-c-3{
+	width: 20vw;
+	height:max-content;
 	display: flex;
 	flex-direction: column;
 	background-color: var(--fa);
@@ -101,6 +114,7 @@ header{
 	top: 0;
 	display: flex;
 	align-items: center;
+	z-index: 1;
 }
 
 .profile-2{
@@ -126,7 +140,7 @@ header{
 /* 조립연습하는 요소들 */
 .main{
 	width:20vw;
-	height:50vh;
+	height:max-content;
 	background-color: var(--fa);
 }
 .space{
@@ -140,8 +154,8 @@ height: 30vh;
 background-color: var(--dig);
 }
 .s-img{
-	width: 7vw;
-	height: 7vw;
+	width: 5vw;
+	height: 5vw;
 	background-color: var(--lg);
 	display:flex;
 	flex-direction: column;
@@ -149,6 +163,14 @@ background-color: var(--dig);
 	margin-left: 1vw;
 	margin-right: 1vw;
 	border-radius:20%;
+}
+.s-img-layout{
+	width: max-content;
+	height: max-content;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
 }
 .nametag{
 width: 8vw;
@@ -160,7 +182,8 @@ align-items: center;
 border-radius: 1vw;
 position: relative;
 top: 1vh;
-left: 1vw;
+left:0.5vw;
+z-index:0;
 }
 .center-text{
 	display: flex;
@@ -172,4 +195,20 @@ left: 1vw;
 	overflow: hidden;
 	width: 20vw;
 	display: flex;
+}
+footer{
+	width:20vw;
+	height:7vh;
+	background-color:var(--08);
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	position:fixed;
+	top:93vh;
+}
+.footer-icon{
+	width: 2vw;
+	height: 2vw;
+	background-color:var(--g);
+	border-radius:30%;
 }
