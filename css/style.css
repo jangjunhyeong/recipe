@@ -33,6 +33,7 @@ body
 	height: max-content;
 	display: flex;
 }
+/* direction-row , container div */
 .con-r{
 	width:20vw;
 	height: 100vh;
@@ -42,6 +43,8 @@ body
 	align-items: center;
 	background-color: var(--g);
 }
+/* direction-column , container div */
+
 .con-c{
 	width: 20vw;
 	height: 100vh;
