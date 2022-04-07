@@ -13,6 +13,11 @@ body{
 	--lg:lightgray;
 	--dig:dimgray;
 	--dag:darkgray;
+	--08:#080808;
+	--fa:#fafafa;
+	--cy:#ffbb09;
+	/* 참깨 UI에 사용하기로 한 대표 3가지 색이다. 양극의 명도값은 사용하지 않았고, 간격은 조정했다.
+	'CharmggaeYellow' 라고 가제로 정했던 노란색 계열의 색도 넣긴했는데 색 그냥 안쓸 계획이다.*/
 }
 /* 높이를 viewport 100으로 쓰는 root div */
 #root-1{
@@ -47,7 +52,7 @@ body{
 	background-color: var(--g);
 
 }
-.box{
+.b-box{
 	width: 15vw;
 	height: 5vh;
 	background-color:var(--lg);
@@ -56,4 +61,15 @@ body{
 	align-items: center;
 	margin-bottom: 1vh;
 	border-radius: 1vw;
+}
+.s-box{
+	width: 4vw;
+	height: 3vh;
+	background-color: var(--08);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	border-radius:1vw;
+	color:var(--fa)
+
 }
