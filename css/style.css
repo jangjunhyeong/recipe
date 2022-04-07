@@ -1,13 +1,12 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
-*{
-	margin: 0;
-	padding: 0;
-}
+
 body{
-	font-family: 'Noto Sans KR', sans-serif;
-}
+	font-family: 'Noto Sans KR', sans-serif;}
+
+	*{padding: 0;
+	margin: 0;}
 :root{
 	--g:gray;
 	--lg:lightgray;
@@ -71,5 +70,4 @@ body{
 	align-items: center;
 	border-radius:1vw;
 	color:var(--fa)
-
 }
