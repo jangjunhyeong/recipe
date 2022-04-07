@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+	<link rel="stylesheet" href="./css/style.css">
+	<style>
+		.con-c>div{
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+		}
+		.con-c>div>h1{
+			margin-bottom:1vh;
+		}
+		.con-c>div>h2{
+			margin-top: 10vh;
+			margin-bottom: 10vh;
+		}
+		.con-c>div>div:nth-child(4){
+			display: flex;
+			width: 15vw;
+			justify-content:space-around;
+		}
+		.con-c>div>div:nth-child(4)>div{
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
+			align-items: center;
+		}
+		.con-c>div>div:nth-child(4)>div>div:nth-child(1){
+			width: 2vw;
+			height: 2vw;
+			border-radius: 2vw;
+			background-color: var(--08);
+		}
+		.con-c>div>div:nth-child(4)>div>h4{
+			margin-top:2vh;
+		}
+		.con-c>div>div:nth-child(5){
+			width: 3vw;
+			height: 3vw;
+			background-color:var(--08);
+			border-radius: 3vw;
+			margin-top: 30vh;
+		}
+
+	</style>
+</head>
+<body>
+	<div id="root-1">
+		<div class="con-c">
+			<div>
+				<h1>준형</h1>
+				<h4>님의 분석결과</h4>
+				<h2>좋아요</h2>
+				<div>
+					<div>
+						<div></div>
+						<h4>닭고기</h4>
+					</div>
+					<div>
+						<div></div>
+						<h4>달걀</h4>
+					</div>
+					<div>
+						<div></div>
+						<h4>돼지고기</h4>
+					</div>
+				</div>
+				<div></div>
+			</div>
+		</div>
+	</div>
+</body>
+</html>
