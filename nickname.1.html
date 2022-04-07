@@ -6,13 +6,34 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Document</title>
 	<link rel="stylesheet" href="./css/style.css">
+	<style>
+		.con-c>div{
+			width: 20vw;
+			height: 50vh;
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
+			align-items: center;
+		}
+		.con-c>div>div:nth-child(3){
+			width: 10vw;
+			height: 0.2vh;
+			background-color:var(--08);
+			margin-bottom: 2vh;
+			border-radius: 1vh;
+		}
+		.b-box{
+			color:var(--fa);
+			background-color: var(--08);
+		}
+	</style>
 </head>
 <body>
 	<div id="root-1">
 		<div class="con-c">
 			<div>
-				<div><h1>닉네임 등록</h1></div>
-				<div><p>16자 이내 (특수문자 불가)</p></div>
+				<div><h1 style="margin-bottom: 5vh;">닉네임 등록</h1></div>
+				<div><p style="font-size:smaller; opacity:0.5;">16자 이내 (특수문자 불가)</p></div>
 				<!-- 선 -->
 				<div></div>
 				<!-- 박스 2개 -->
