@@ -47,6 +47,14 @@ body
 	align-items: center;
 	background-color: var(--fa);
 }
+.con-r-2{
+	width:20vw;
+	height: 100vh;
+	display: flex;
+	flex-direction: row;
+	background-color: var(--fa);
+}
+
 /* direction-column , container div */
 
 .con-c{
@@ -57,7 +65,13 @@ body
 	align-items: center;
 	justify-content: center;
 	background-color: var(--fa);
-
+}
+.con-c-2{
+	width: 20vw;
+	height: 100vh;
+	display: flex;
+	flex-direction: column;
+	background-color: var(--fa);
 }
 .b-box{
 	width: 15vw;
@@ -86,21 +100,76 @@ header{
 	position: fixed;
 	top: 0;
 	display: flex;
-	justify-content:space-between;
-	
+	align-items: center;
 }
-/* html header 양식 */
 
-/* html header 양식  */
 .profile-2{
 	width: 2vw;
 	height: 2vw;
-	border-radius: 2vw;
+	border-radius:100%;
 	background-color: var(--g);
+	margin-right:1vw;
+	margin-left: 1vw;
 }
-
-
+.square-2{
+	width: 2vw;
+	height: 2vw;
+	background-color: var(--dag);
+	position: relative;
+	left: 10vw;
+}
+/* 이런식으로 하나하나 만들어서 조립 */
 .width-1-vw {width:1vw;}
 .width-50-vw {width:50vw;}
 .height-50-vh {height:50vh;}
 .border-radius-50-per {border-radius: 50%;}
+/* 조립연습하는 요소들 */
+.main{
+	width:20vw;
+	height:50vh;
+	background-color: var(--fa);
+}
+.space{
+	width: 20vw;
+	height: 8vh;
+	background-color: red;
+}
+.b-img{
+width: 20vw;
+height: 30vh;
+background-color: var(--dig);
+}
+.s-img{
+	width: 7vw;
+	height: 7vw;
+	background-color: var(--lg);
+	display:flex;
+	flex-direction: column;
+	align-items: center;
+	margin-left: 1vw;
+	margin-right: 1vw;
+	border-radius:20%;
+}
+.nametag{
+width: 8vw;
+height: 3vh;
+background-color:var(--lg);
+display: flex;
+justify-content: center;
+align-items: center;
+border-radius: 1vw;
+position: relative;
+top: 1vh;
+left: 1vw;
+}
+.center-text{
+	display: flex;
+	justify-content: center;
+	margin-bottom: 2vh;
+	margin-top: 2vh;
+}
+.s-img-layout{
+	overflow: hidden;
+	width: 20vw;
+	display: flex;
+}
