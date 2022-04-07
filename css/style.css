@@ -280,3 +280,8 @@ z-index:0;
 	align-items:center;
 	justify-content: center;
 }
+.position-fixed{
+	position: fixed;
+	top:30vh;
+	left: 42.5vw;
+}
