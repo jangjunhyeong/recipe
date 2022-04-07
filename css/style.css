@@ -314,3 +314,22 @@ z-index:0;
 	position: relative;
 	margin-top:2vh;
 }
+.nametag-full-2{
+	width: 20vw;
+	height: 5vh;
+background-color:var(--lg);
+display: flex;
+justify-content: center;
+align-items: center;
+border-radius: 1vw;
+position: relative;
+top: 1vh;
+margin-bottom: 1vh;
+z-index:0;
+}
+.main-2{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
